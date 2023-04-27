@@ -1,0 +1,11 @@
+.layout__type--a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 255px auto;
+  .content {
+    margin-top: 8px;
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+  }
+}

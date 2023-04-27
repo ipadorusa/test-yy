@@ -1,11 +1,14 @@
-import Head from 'next/head'
-import { Footer, Header } from '../organism'
+import Head from "next/head";
+import { Footer, Header, Lnb, StatusBar } from "../organism";
+import classNames from "classnames/bind";
+import style from "./layoutA.module.scss";
+const cx = classNames.bind(style);
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-const LayoutAtype:React.FC<Props> = ({children}) => {
+const LayoutAtype: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
@@ -14,13 +17,16 @@ const LayoutAtype:React.FC<Props> = ({children}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
-      <div>
-        
-        {children}
+      <div className={cx(`layout__type--a`)}>
+        <Lnb />
+        <div className={cx(`content`)}>
+          <StatusBar />
+          {children}
+        </div>
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default LayoutAtype;
