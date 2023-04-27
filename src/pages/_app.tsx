@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         {getLayout(<Component {...pageProps} />)}
         <ReactQueryDevtools />
       </Hydrate>
-    </QueryClientProvider>
+    </QueryClientProvider> 
   )
 }
 
