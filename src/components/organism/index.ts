@@ -1,6 +1,6 @@
 import Header from "./header";
 import Footer from "./footer/footer";
-import Lnb from "./lnb/Lnb";
+import SideBar from "./lnb/SideBar";
 import StatusBar from "./statusbar";
 
-export { Header, Footer, Lnb, StatusBar };
+export { Header, Footer, SideBar, StatusBar };

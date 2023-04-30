@@ -2,10 +2,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: 255px auto;
+  grid-auto-columns: 1fr;
+  //grid-template-areas: "header header header header";
   .content {
     margin-top: 8px;
     width: 100%;
     max-width: 1248px;
     margin: 0 auto;
+    grid-row: 2;
   }
 }
